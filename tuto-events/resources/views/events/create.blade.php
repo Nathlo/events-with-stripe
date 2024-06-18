@@ -12,12 +12,18 @@
     
             <x-input-label for="premium" value='Premium' />
             <x-text-input id="premium" name="premium" type="checkbox" :value="old('premium')" />
-
+            {{-- inputs for the DATE --}}
             <x-input-label for="starts_at" value='Date de démarrage' />
             <x-text-input id="starts_at" name="starts_at" type="date" :value="old('starts_at')" />
 
             <x-input-label for="ends_at" value='Date de fin' />
             <x-text-input id="ends_at" name="ends_at" type="date" :value="old('ends_at')" />
+            {{-- inputs for the TIME --}}
+            <x-input-label for="starts_at" value='Heure de démarrage' />
+            <x-text-input id="starts_at" name="starts_at" type="time" :value="old('starts_at')" />
+
+            <x-input-label for="ends_at" value='Heure de fin' />
+            <x-text-input id="ends_at" name="ends_at" type="time" :value="old('ends_at')" />
 
             <x-input-label for="tags" value="Les tags (séparés par une virgule)" />
             <x-text-input id="tags" name="tags" type="text" :value="old('tags')" />

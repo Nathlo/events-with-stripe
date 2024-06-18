@@ -8,10 +8,12 @@
                 <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">{{ $event->starts_at->translatedFormat('M') }}</span>
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">{{ $event->starts_at->translatedFormat('d') }}</span>
+                <span class="font-medium text-xs text-gray-800 title-font leading-none">{{ $event->starts_at->translatedFormat('H:i') }}</span>
                 </div>
                 <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">{{ $event->ends_at->translatedFormat('M') }}</span>
                 <span class="font-medium text-lg text-gray-800 title-font leading-none">{{ $event->ends_at->translatedFormat('d') }}</span>
+                <span class="font-medium text-xs text-gray-800 title-font leading-none">{{ $event->ends_at->translatedFormat('H:i') }}</span>
                 </div>
                 <div class="flex-grow pl-6">
                 @foreach ($event->tags as $tag)

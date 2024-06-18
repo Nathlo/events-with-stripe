@@ -57,7 +57,7 @@ class EventController extends Controller
              'content' => $request->content,
              'premium' => $request->filled('premium'),
              'starts_at' => $request->starts_at,
-             'ends_at' => $request->ends_at
+             'ends_at' => $request->ends_at,
         ]);
 
         $tags = explode(',', $request->tags);
